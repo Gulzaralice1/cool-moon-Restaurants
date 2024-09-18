@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke !important;
+}
+/* Change the navbar background color */
+.navbar {
+  background-color: #090909 !important; /* Dark background */
+}
+
+/* Change the text color on hover */
+.navbar .nav-link:hover {
+  color: #ffcc00; /* Yellow text on hover */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:  #ffcc00 !important;
+}
+
+/* Change the background color of the focused link */
+.navbar .nav-link:focus {
+  background-color: #555; /* Darker background on focus */
+  color: #fdfcfc !important; /* Yellow text on focus */
+  border-radius: 20px;
+}
+
+/* padding in navbar link  */
+.navbar-nav .nav-link{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.nav-link i {
+    padding-right: 10px !important;
+    color: #FFD43B;
+}
+.navbar-light .navbar-toggler{
+    border: 1px solid wheat !important;
+}
+
+
+/* card  */
+.Browse{
+    text-transform: uppercase;
+    padding: 0px !important ;
+}
+.card-title{
+    font-family:  Condensed;
+    font-weight: 700;
+    font-size: 18px !important;
+    font-style: normal;
+    /* background-color: #9c6b09; */
+}
+.card{
+   background-color: #f8f7f5!important;
+}
+
+/* colour combaction */
+.yello{
+    color: #FFD43B !important;
+}
+
+
+
+
+/* media queary */
+@media (max-width: 768px){
+    .navbar-nav .nav-link{
+        padding-left: 12px !important;
+    }
+    .fa-user-plus{
+        padding-right: 5px !important;
+    }
+}
