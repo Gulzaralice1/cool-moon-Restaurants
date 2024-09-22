@@ -62,8 +62,27 @@ body{
     color: #FFD43B !important;
 }
 
-
-
+.scroll-container {
+    overflow-x: auto;           /* Enables horizontal scrolling */
+    white-space: nowrap;        /* Prevents line breaks and keeps items in one row */
+  }
+  
+  .scroll-row {
+    display: inline-flex;       /* Flexbox to align items horizontally */
+  }
+.bloc{
+    height: 100px;
+    width: 200px !important;
+    border: 1px solid red;
+    margin-left: 10px;
+}
+.card{
+    margin-right: 0.75rem !important;
+}
+.card-img-top{
+    height: 150px;
+    width: 150px;
+}
 
 /* media queary */
 @media (max-width: 768px){
@@ -74,3 +93,9 @@ body{
         padding-right: 5px !important;
     }
 }
+@media (min-width: 768px){
+    .viwel{
+        margin-top:10px !important;
+    }
+}
+
