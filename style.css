@@ -56,6 +56,9 @@ body{
 .card{
    background-color: #f8f7f5!important;
 }
+.card:hover{
+    border:2px double #0b0900;
+}
 
 /* colour combaction */
 .yello{
@@ -67,7 +70,7 @@ body{
     white-space: nowrap;        /* Prevents line breaks and keeps items in one row */
   }
   
-  .scroll-row {
+.scroll-row {
     display: inline-flex;       /* Flexbox to align items horizontally */
   }
 .bloc{
@@ -76,15 +79,13 @@ body{
     border: 1px solid red;
     margin-left: 10px;
 }
-.card{
-    margin-right: 0.75rem !important;
-}
-.card-img-top{
-    height: 150px;
-    width: 150px;
+.offer-card{
+    margin-right: 0.75rem;
 }
 
+
 /* media queary */
+/* below tab */
 @media (max-width: 768px){
     .navbar-nav .nav-link{
         padding-left: 12px !important;
@@ -92,10 +93,19 @@ body{
     .fa-user-plus{
         padding-right: 5px !important;
     }
+    .offer-card{
+        height: 350px;
+        width: 200px;
+    }
 }
+/* above tab */
 @media (min-width: 768px){
     .viwel{
         margin-top:10px !important;
+    }
+    .offer-card{
+        height: 350px;
+        width: 280px;
     }
 }
 
