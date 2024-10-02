@@ -55,9 +55,7 @@ body{
 }
 .card{
    background-color: #f8f7f5!important;
-}
-.card:hover{
-    border:2px double #0b0900;
+   box-shadow: 3px 3px 8px 0px #bbb1b1;
 }
 
 /* colour combaction */
@@ -79,10 +77,6 @@ body{
     border: 1px solid red;
     margin-left: 10px;
 }
-.offer-card{
-    margin-right: 0.75rem;
-}
-
 
 /* media queary */
 /* below tab */
@@ -93,19 +87,11 @@ body{
     .fa-user-plus{
         padding-right: 5px !important;
     }
-    .offer-card{
-        height: 350px;
-        width: 200px;
-    }
 }
 /* above tab */
 @media (min-width: 768px){
     .viwel{
         margin-top:10px !important;
-    }
-    .offer-card{
-        height: 350px;
-        width: 280px;
     }
 }
 
