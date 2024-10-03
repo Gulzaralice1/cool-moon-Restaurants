@@ -5,6 +5,10 @@
 body{
     background-color: whitesmoke !important;
 }
+.under-maintenance{
+    background-color: red;
+    
+}
 /* Change the navbar background color */
 .navbar {
   background-color: #090909 !important; /* Dark background */
@@ -76,6 +80,35 @@ body{
     width: 200px !important;
     border: 1px solid red;
     margin-left: 10px;
+}
+
+
+/* Cool Moon DELEVERY */
+.CM-Delivery{
+    font-size: 36px !important;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .15px;
+}
+
+.cm-Delivery-btn{
+        padding: 10px 20px; /* Controls padding inside the button */
+        font-size: 16px; /* Adjust font size */
+        border: none; /* Button border */
+        background-color: yellow; /* Button background */
+        color: black; /* Text color */
+        cursor: pointer;
+        border-radius: 5px; /* Rounded corners */
+        min-width: 100px; /* Optional: Minimum width to ensure the button doesn’t get too small */
+        max-width: 300px; /* Optional: Maximum width to cap the button size */
+        white-space: nowrap; /* Prevent text wrapping */
+}
+.cm-Delivery-btn:hover{
+    /* transition: ease-in-out 1s 1s; */
+    background-color: rgb(128, 146, 86) !important;
+    transition: left 0.4s ease;
+    color: black;
+    
 }
 
 /* media queary */
