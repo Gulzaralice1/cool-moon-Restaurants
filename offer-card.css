@@ -12,7 +12,7 @@
     color: #e4002b !important;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    /* -webkit-line-clamp: 1; */
     -webkit-box-orient: vertical;
 }
 .offer-offer-view-detail p{

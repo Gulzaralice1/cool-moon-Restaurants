@@ -111,6 +111,31 @@ body{
     
 }
 
+
+.footer{
+    background-color: #e8eaf1;
+}
+.footer_heading{
+    line-height: 20px;
+    font-size: 1pc;
+    margin-bottom: 20px;
+    margin-top: revert;
+}
+
+.footer_list{
+    font-size: 1pc;
+    letter-spacing: -.15px;
+    color: rebeccapurple;
+    line-height: 16px;
+    color: #292929;
+}
+.border-icon{
+    border-radius: 100% !important;
+    border: 2px solid black !important;
+    background-color: #090909;
+    color: yellow;
+}
+
 /* media queary */
 /* below tab */
 @media (max-width: 768px){
