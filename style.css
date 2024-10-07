@@ -129,12 +129,6 @@ body{
     line-height: 16px;
     color: #292929;
 }
-.border-icon{
-    border-radius: 100% !important;
-    border: 2px solid black !important;
-    background-color: #090909;
-    color: yellow;
-}
 
 /* media queary */
 /* below tab */
