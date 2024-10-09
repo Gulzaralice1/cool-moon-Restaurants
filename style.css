@@ -119,6 +119,10 @@ body{
     
 }
 
+/* count */
+.count{
+    font: 800 40px system-ui;
+}
 
 .footer{
     background-color: #e8eaf1;
