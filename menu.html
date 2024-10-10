@@ -3,22 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>offer</title>
     <link rel="stylesheet"  href="offer.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- offer card css  -->
+    <link rel="stylesheet" href="offer-card.css">
+    <title>KFC Menu</title>
+    <style>
+        /* Custom style for active sidebar link */
+        .active-menu {
+            font-weight: bold;
+        }
+
+        /* Make sidebar fixed and scrollable */
+        /* <!--sidebarMenu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            width: 250px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }---> */
+
+        /* Adjust main content to fit next to the fixed sidebar */
+
+    </style>
 </head>
-<body class="bg-dark">
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="img-fluid mx-auto d-block col-6 justify-content-center align-items-center align-self-center bg-dark mt-5">
-                    <img src="image/3d-web-page-under-construction-concept-2B77M01-removebg-preview.png">
-                </div>
-                
+<body data-bs-spy="scroll" data-bs-target="#sidebarMenu" data-bs-offset="100" tabindex="0">
+<div class="container">
+    <div class="row">
+        <!-- Sidebar Menu -->
+         <div class="col-4 col-md-4 bg-dark">
+          <nav id="sidebarMenu" class="sidebar">
+            <ul class="nav flex-column list-group">
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#international-burger-fest">International Burger Fest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#match-day-combos">Match Day Combos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#value-lunch-specials">Value Lunch Specials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#box-meals">Box Meals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#burgers">Burgers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#chicken-buckets">Chicken Buckets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#rice-bowlz">Rice Bowlz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#value-snackers">Value Snackers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#chicken-rolls">Chicken Rolls</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#snacks">Snacks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link list-group-item" href="#beverages">Beverages</a>
+                </li>
+            </ul>
+        </nav>
+         </div>
+        <!-- Menu Content -->
+         <div class="col-8 col-md-8 bg-warning"><div class="col-8 col-md-8" style="color: red;">
+          <div class="">
+            <div id="international-burger-fest" class="py-4" style="min-height: 300px;">
+                <h2>International Burgggggggggggggggggggger Fest</h2>
+                <p>Content for Internatfnvvvvvvvvvvvfional Burger Fest...</p>
+            </div>
+            <div id="match-day-combos" class="py-4" style="min-height: 300px;">
+                <h2>Match Day Combos</h2>
+                <p>Content for Matggggggggggggch Day Combos...</p>
+            </div>
+            <div id="value-lunch-specials" class="py-4" style="min-height: 300px;">
+                <h2>Value Lunch Specials</h2>
+                <p>Content for Value Lunch Specials...</p>
+            </div>
+            <div id="box-meals" class="py-4" style="min-height: 300px;">
+                <h2>Box Meals</h2>
+                <p>Content for Box Meals...</p>
+            </div>
+            <div id="burgers" class="py-4" style="min-height: 300px;">
+                <h2>Burgers</h2>
+                <p>Content for Burgers...</p>
+            </div>
+            <div id="chicken-buckets" class="py-4" style="min-height: 300px;">
+                <h2>Chicken Buckets</h2>
+                <p>Content for Chicken Buckets...</p>
+            </div>
+            <div id="rice-bowlz" class="py-4" style="min-height: 300px;">
+                <h2>Rice Bowlz</h2>
+                <p>Content for Rice Bowlz...</p>
+            </div>
+            <div id="value-snackers" class="py-4" style="min-height: 300px;">
+                <h2>Value Snackers</h2>
+                <p>Content for Value Snackers...</p>
+            </div>
+            <div id="chicken-rolls" class="py-4" style="min-height: 300px;">
+                <h2>Chicken Rolls</h2>
+                <p>Content for Chicken Rolls...</p>
+            </div>
+            <div id="snacks" class="py-4" style="min-height: 300px;">
+                <h2>Snacks</h2>
+                <p>Content for Snacks...</p>
+            </div>
+            <div id="beverages" class="py-4" style="min-height: 300px;">
+                <h2>Beverages</h2>
+                <p>Content for Beverages...</p>
             </div>
         </div>
-    </section>
+         </div> </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Optionally, if you want to use jQuery for smooth scrolling:
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('div[id]');
+        const navLinks = document.querySelectorAll('#sidebarMenu .nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120; // Adjust based on your header height
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active-menu');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active-menu');
+                }
+            });
+        });
+    });
+</script>
 </body>
-</html>

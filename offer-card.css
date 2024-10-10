@@ -7,7 +7,7 @@
 .offer-Card-title{
     font-family: "Archivo Black", sans-serif;
     font-style: normal;
-    font-size: 28px !important;
+    font-size: 20px !important;
     font-weight: 700;
     color: #e4002b !important;
     overflow: hidden;
@@ -53,6 +53,9 @@
     .offer-card{
         /* height: 369px; */
         width: 308px;
+    }
+    .offer_slidebar{
+        font-size: 10px;
     }
 
 }
