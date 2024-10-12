@@ -1,0 +1,108 @@
+body {
+    margin: 0; /* Remove default margin */
+}
+
+/* Navbar styling */
+.navbar {
+    position: sticky; /* Make navbar stick to the top */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Set the scrollable area to full screen height */
+.scrollspy-example {
+    position: relative;
+    height: calc(100vh - 56px); /* Full viewport height minus the navbar height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    border: 1px solid #dee2e6; /* Optional: Add a border for better visibility */
+}
+
+/* Style for horizontal card row */
+.card-row {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Optional padding */
+    gap: 10px; /* Space between cards */
+}
+
+.card {
+    min-width: 18rem; /* Set a minimum width for cards */
+    flex: 0 0 auto; /* Prevent flex items from growing */
+}
+
+.header-menu{
+   height: 80px;
+}
+.start-order-btn {
+    border-radius: 50px; /* Rounded button */
+    padding: 10px 25px; /* Button padding */
+    font-size: 16px; /* Button text size */
+}
+.fest{
+    font-weight: 800;
+}
+.bg-menu{
+    background-color: #f8f7f5;
+}
+.card{
+    box-shadow: 3px 3px 3px 0px #232323;
+}
+/* .card:hover{
+    height: 382px;
+    min-width: 17rem;
+    transition: ease-in-out 2s;
+} */
+.card-title-menu{
+    font-size: 16px;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.non-veg{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #494949;
+    margin-bottom: 5px;
+}
+.price{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 7px !important;
+}
+.menu-card-text{
+    color: #494949;
+    font-size: 14px;
+}
+.glass-cone-btn{
+    margin-left:8px ;
+}
+@media (max-width: 768px) {
+    .scrollspy-example {
+        height: calc(100vh - 56px); /* Adjust for navbar height */
+    }
+    .header-menu{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-menu{
+        font-size: 13px !important;
+        height: 40px;
+    }
+    .start-order-btn{
+        font-size: 11px;
+    }
+    .fest{
+        font-size: 34px !important;
+        
+    }
+}
