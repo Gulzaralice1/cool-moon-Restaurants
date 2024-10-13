@@ -32,6 +32,15 @@
   .navbar-light .navbar-toggler{
       border: 1px solid wheat !important;
   }
+.secondnd-navbar{
+    font-size: 10px;
+  }
+  .nav-pills .nav-link.active{
+    background-color: none !important;
+}
+.yello{
+  color: #ffcc00;
+}
   /* Mobile responsiveness */
   @media (max-width: 576px) {
     .col-4 {

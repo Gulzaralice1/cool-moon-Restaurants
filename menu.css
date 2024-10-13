@@ -84,6 +84,9 @@ body {
 .glass-cone-btn{
     margin-left:8px ;
 }
+.scrollspy-example{
+    padding: 0px !important;
+}
 @media (max-width: 768px) {
     .scrollspy-example {
         height: calc(100vh - 56px); /* Adjust for navbar height */
@@ -104,5 +107,8 @@ body {
     .fest{
         font-size: 34px !important;
         
+    }
+    .footer_list{
+        font-size: 11px !important;
     }
 }
