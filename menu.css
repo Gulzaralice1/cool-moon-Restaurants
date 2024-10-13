@@ -84,8 +84,13 @@ body {
 .glass-cone-btn{
     margin-left:8px ;
 }
+
 .scrollspy-example{
     padding: 0px !important;
+}
+.yello{
+    color: #FFD43B !important;
+
 }
 @media (max-width: 768px) {
     .scrollspy-example {
