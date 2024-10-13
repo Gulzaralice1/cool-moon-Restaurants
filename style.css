@@ -13,27 +13,26 @@ body{
     
 }
 /* Change the navbar background color */
-.navbar {
-  background-color: #090909 !important; /* Dark background */
+/* .navbar {
+  background-color: #090909 !important; 
 }
 
-/* Change the text color on hover */
+
 .navbar .nav-link:hover {
-  color: #ffcc00; /* Yellow text on hover */
+  color: #ffcc00; 
 }
 
 .navbar-light .navbar-nav .nav-link {
     color:  #ffcc00 !important;
 }
 
-/* Change the background color of the focused link */
 .navbar .nav-link:focus {
-  background-color: #555; /* Darker background on focus */
-  color: #fdfcfc !important; /* Yellow text on focus */
+  background-color: #555; 
+  color: #fdfcfc !important; 
   border-radius: 20px;
 }
 
-/* padding in navbar link  */
+/
 .navbar-nav .nav-link{
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -45,7 +44,7 @@ body{
 }
 .navbar-light .navbar-toggler{
     border: 1px solid wheat !important;
-}
+} */
 
 
 /* card  */
@@ -58,7 +57,6 @@ body{
     font-weight: 700;
     font-size: 18px !important;
     font-style: normal;
-    /* background-color: #9c6b09; */
 }
 .card{
    background-color: #f8f7f5!important;
@@ -124,34 +122,6 @@ body{
     font: 800 40px system-ui;
 }
 
-/* footer */
-/* .footer{
-    background-color: #e8eaf1;
-}
-.footer_heading{
-    line-height: 20px;
-    font-size: 1pc;
-    margin-bottom: 20px;
-    margin-top: revert;
-}
-
-.footer_list{
-    font-size: 12px;
-    letter-spacing: -.15px;
-    color: rebeccapurple;
-    line-height: 16px;
-    color: #292929;
-}
-.border-icon{
-    border-radius: 100% !important;
-    border: 2px solid black !important;
-    background-color: #090909;
-    color: yellow;
-}
-.social-icons i {
-    transition: color 0.3s ease; /* Smooth transition effect */
-}
-
 .social-icons i:hover {
     color: rgb(168, 168, 119); /* Change to your brand color */
 }
@@ -203,9 +173,9 @@ body{
 /* media queary */
 /* below tab */
 @media (max-width: 768px){
-    .navbar-nav .nav-link{
+    /* .navbar-nav .nav-link{
         padding-left: 12px !important;
-    }
+    } */
     .fa-user-plus{
         padding-right: 5px !important;
     }
