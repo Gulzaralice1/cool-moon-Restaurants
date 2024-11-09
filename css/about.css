@@ -1,0 +1,81 @@
+
+/* Keyframes for the first image (entering from the left) */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for the second image (entering from the right) */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animations */
+.animate-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-right {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+/* Ensure images fit within the layout */
+.img-fluid {
+    height: 320px;
+}
+
+/* Adjust the container */
+.about-section {
+    background-color: #ffc107;
+}
+
+.bottom-nav{
+    height: 100px;
+    width: 100px;
+    padding: 30%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    /* Custom styles */
+    .custom-card {
+        background-color: #fff;
+        border-radius: 15px;
+        padding-top: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+      .custom-icon {
+        font-size: 100px;
+        color: #d71a21; /* Adjust this color if needed */
+      }
+  
+      .card-container {
+        background-color: #d71a21; /* Red background color */
+        border-radius: 20px;
+        width: 250px;
+        /* height: 200px; */
+      }
+  
+      @media (max-width: 576px) {
+        .about-txt{
+            font-size: 12px !important;
+        }
+      }
