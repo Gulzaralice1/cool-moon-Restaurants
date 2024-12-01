@@ -42,21 +42,22 @@ Space to display the latest news, seasonal menu additions, or upcoming events.
 
 ## 🛠️ **Technologies Used**
 
-**HTML**: 
-For structuring the content of the website.
-**CSS**: 
-For designing and styling the website to make it visually attractive.
-**JavaScript**: 
-To add dynamic and interactive functionalities to the website.
-**Bootstrap**: 
-To create a responsive layout and ensure mobile-first design.
-**Font Awesome**: 
-For incorporating scalable vector icons that enhance the website's user interface.
-**Google Fonts**: 
-To improve the website's typography with customized fonts.
+- **HTML**: For structuring the content of the website.
+- **CSS**: For designing and styling the website to make it visually attractive.
+- **JavaScript**: To add dynamic and interactive functionalities to the website.
+- **Bootstrap**: To create a responsive layout and ensure mobile-first design.
+- **Font Awesome**: For incorporating scalable vector icons that enhance the website's user interface.
+- **Google Fonts**: To improve the website's typography with customized fonts.
 
 
 
 ## 🌐 **Live Demo**
 
-Check out the live demo: **(https://gulzaralice1.github.io/cool-moon-Restaurants/))**  
+Check out the live demo: **(https://gulzaralice1.github.io/cool-moon-Restaurants/)**  
+
+## 📞 **Contact**
+If you have any questions, feedback, or suggestions, feel free to reach out!
+
+- **✉️Email**: mdgulzar.tech@gmail.com
+- **🐱GitHub** https://github.com/Gulzaralice1
+- **🔗LinkedIn**: www.linkedin.com/in/mdgulzar-tech
