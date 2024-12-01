@@ -703,41 +703,38 @@
     // This JavaScript code is for demonstration purposes only. It will not affect the website functionality.
 
 // Example of Dark/Light Mode Toggle (Showcase only, won't execute):
-// const toggleButton = document.getElementById('toggleButton');
-// const body = document.body;
-// const icon = toggleButton.querySelector('i');
+const toggleButton = document.getElementById('toggleButton');
+const body = document.body;
+const icon = toggleButton.querySelector('i');
 
-// toggleButton.addEventListener('click', () => {
-//     body.classList.toggle('dark-mode');
-//     if (body.classList.contains('dark-mode')) {
-//         icon.classList.remove('fa-sun');
-//         icon.classList.add('fa-moon');
-//     } else {
-//         icon.classList.remove('fa-moon');
-//         icon.classList.add('fa-sun');
-//     }
 // });
+        icon.classList.add('fa-moon');
+    } else {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+});
 // This JavaScript code is for showcasing an image slider that doesn't affect the website.
 // Example of an Image Slider (Showcase Only, won't execute):
-// const slides = document.querySelectorAll('.slide');
-// let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
 
-// function showSlide(index) {
-//     slides.forEach(slide => slide.classList.remove('active'));
-//     slides[index].classList.add('active');
-// }
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+}
 
-// function nextSlide() {
-//     currentIndex = (currentIndex + 1) % slides.length;
-//     showSlide(currentIndex);
-// }
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
 
-// function prevSlide() {
-//     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-//     showSlide(currentIndex);
-// }
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+}
 
-// setInterval(nextSlide, 3000); // Change slide every 3 seconds
+setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
 
 </script>
