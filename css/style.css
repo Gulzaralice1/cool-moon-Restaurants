@@ -63,11 +63,6 @@ body{
    box-shadow: 3px 3px 8px 0px #bbb1b1;
 }
 
-/* colour combaction */
-.yello{
-    color: #FFD43B !important;
-}
-
 .scroll-container {
     overflow-x: auto;           /* Enables horizontal scrolling */
     white-space: nowrap;        /* Prevents line breaks and keeps items in one row */

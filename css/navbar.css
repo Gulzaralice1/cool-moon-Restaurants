@@ -8,6 +8,10 @@
     color: #ffcc00; /* Yellow text on hover */
   }
   
+  /* colour combaction */
+.yello{
+  color: #FFD43B !important;
+}
   .navbar-light .navbar-nav .nav-link {
       color:  #ffcc00 !important;
   }

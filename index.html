@@ -44,24 +44,6 @@ button {
 }
 
   </style>
-  <script>
-    const toggleButton = document.getElementById('toggleButton');
-const body = document.body;
-const icon = toggleButton.querySelector('i');
-
-toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    // Toggle icon between sun and moon
-    if (body.classList.contains('dark-mode')) {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon'); // Moon icon for Dark mode
-    } else {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun'); // Sun icon for Light mode
-    }
-});
-
-  </script>
 </head>
 <body>
   <!-- Navbar -->
