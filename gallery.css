@@ -1,0 +1,46 @@
+.grid-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.custom-row {
+    margin-bottom: 10px;
+}
+.row>*{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+
+        /* Frame for Picture of the Day */
+        .photo-frame {
+            border: 8px solid #f8f9fa; /* White Border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s ease; /* Hover effect */
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        /* Highlight text for Picture of the Day */
+        .photo-caption {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Gallery Styling */
+        .gallery img {
+            border: 3px solid #ddd;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
