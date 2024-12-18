@@ -13,3 +13,20 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+
+
+// Pop button 
+function openPopup() {
+  document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+
+
+// pop image at index page
+document.addEventListener('DOMContentLoaded', function () {
+  var popupModal = new bootstrap.Modal(document.getElementById('popupModal'));
+  popupModal.show();
+});

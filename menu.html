@@ -31,6 +31,7 @@
             <a class="nav-link" href="index.html"><i class="fa-solid fa-house "></i>Home</a>
             <a class="nav-link" href="menu.html"><i class="fa-solid fa-utensils"></i>Menu</a>
             <a class="nav-link" href="offer.html"><i class="fa-solid fa-tags"></i>Offer</a>
+            <a class="nav-link" href="gallery.html"><i class="fa-solid fa-photo-film"></i>gallery</a>
             <a class="nav-link" href="about.html"><i class="fa-solid fa-tags"></i>about</a>
             <a class="nav-link" href="login.html"><i class="fa-solid fa-user-plus"></i>Login</a>
           </div>
@@ -60,7 +61,6 @@
         </ul>
     </nav>
     </div>
-
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
             <section>
                 <div class="container">
@@ -74,6 +74,23 @@
                     </div>
                 </div>
             </section>
+            
+            <!-- Pop button -->
+            <button class="btn btn-primary position-fixed" style="bottom: 100px; right: 24px;" onclick="openPopup()">
+                <i class="fa-solid fa-utensils" style="color: #FFD43B;"></i>
+            </button>
+              <!-- Pop-up Structure -->
+            <div class="popup-overlay" id="popup">
+                <div class="popup-box">
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+                <!-- <img src="image/download.png"> -->
+                <img src="image/offer/menu.jpg" class="img-fluid">
+
+                <!-- <h2>Pop-up Content</h2>
+                <p>This is a centered pop-up window with a close button!</p> -->
+                </div>
+            </div>
+
             <section>
             <!-- Horizontal scrolling card row -->
             <div class="container ">
@@ -704,5 +721,6 @@
     <!-- Bootstrap JS and dependencies (Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
