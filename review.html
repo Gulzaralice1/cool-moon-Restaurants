@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Moon Restaurant Review</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/navbar.css"> 
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .review-system-page {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .review-box {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 3px 3px;
+            border-radius: 10px;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            margin-bottom: 20px;
+            width: 80%;
+            /* height: 100%; */
+            max-width: 500px;
+        }
+        @media (max-width: 576px) {
+            .review-box{
+                width: auto;
+                height: auto;
+            }
+        }
+        .copy-btn {
+            cursor: pointer;
+            height: 25px;
+            width: 25px;
+        }
+        .btn-transparent {
+            background-color: transparent;
+            border: 2px solid #e88fcd;
+            color: rgb(7, 223, 122);
+            padding: 5px 10px;
+            font-size: 10px;
+            border-radius: 25px;
+            /* text-transform: uppercase; */
+            /* font-weight: bold; */
+            transition: all 0.3s ease;
+        }
+        .btn-transparent:hover {
+            background-color: #007bff;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <section id="navbar" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand yello" href="#">Cool Moon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars yello fs-1 navbar-icon"></i>  <!----navbar icone----->
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="index.html"><i class="fa-solid fa-house "></i>Home</a>
+                <a class="nav-link" href="menu.html"><i class="fa-solid fa-utensils"></i>Menu</a>
+                <a class="nav-link" href="offer.html"><i class="fa-solid fa-tags"></i>Offer</a>
+                <a class="nav-link" href="gallery.html"><i class="fa-solid fa-photo-film"></i>gallery</a>
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-tags"></i>about</a>
+                <a class="nav-link" href="login.html"><i class="fa-solid fa-user-plus"></i>Login</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    <video autoplay muted loop class="video-bg">
+        <source src="image/videoplayback.webm" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="container text-center review-system-page">
+        <h1 class="text-light mb-4">Cool Moon Restaurant Review</h1>
+        <div class="review-box">
+            <span id="textArea">Click the button to get a review</span>
+            <img src="image/logo/copy.png" alt="Copy" class="copy-btn" title="Copy" id="copyImg">
+        </div>
+        <div class="d-flex gap-5 justify-content-between">
+            <button class="btn btn-transparent" onclick="review()">Generate FeedBack</button>
+            <button class="btn btn-transparent" onclick="submit()">Submit FeedBack</button>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("copyImg").addEventListener("click", () => {
+            navigator.clipboard.writeText(document.getElementById("textArea").textContent);
+            document.getElementById("copyImg").src = "image/logo/ok-removebg-preview.png";
+        });
+
+        function review() {
+            const textArea = document.getElementById("textArea");
+            const reviewText = [
+                "Cool Moon is such a great spot in Madhepura! 🌟 Khana toh ekdum tasty hai 😋, aur service bhi bohot fast hai ⏱️. Staff bahut friendly hai 😊, aur atmosphere bhi relaxing hai 🧘. Highly recommend if you’re in the area! 👍",
+                "Agar aapko fast service aur tasty food chahiye 🍲, toh Cool Moon perfect hai! 👌 Indian, Chinese, aur Italian sab kuch milta hai 🍝. Staff bahut polite hai 🙏, aur interiors bhi bohot acchi tarah se design kiye gaye hain 🏡. Must visit! ⭐",
+                "The vibe at Cool Moon is amazing! ✨ Lighting, seating, aur decor sab kuch perfect hai 💡. Khana bhi fresh aur delicious tha 🍽️, aur service bohot quick thi 🚀. Madhepura ka best restaurant hai yeh! 🏅",
+                "Cool Moon is a must-visit! 😍 Food bohot tasty hai 🍛, aur staff bohot friendly aur helpful hai 🤗. Place ka atmosphere relaxed hai 😌, perfect for a family meal 👨‍👩‍👧‍👦. Definitely coming back! 🔙",
+                "Mujhe Cool Moon bohot pasand aaya! ❤️ The interiors are so beautiful 🌸, and the food was on point 🍕. Fast service aur polite staff ka experience bohot accha tha 👏. Aapko zaroor yeh place try karna chahiye! 😄",
+                "Cool Moon is a hidden gem in Madhepura! 🌟 The interiors are so cozy, and the food is super tasty 😋. The staff is friendly, and the service is quick ⏱️. Highly recommend! 👍",
+                "Agar aapko Indian, Chinese ya Italian khana chahiye 🍝, toh yeh jagah perfect hai! 😍 Fast service, acchi hospitality aur amazing food 🍲. Interiors bhi bahut acchhe hai! 💫",
+                "Ambiance toh simply amazing hai! ✨ Lighting, seating aur decor sab kuch perfect 🔥. Aur food? Kya baat hai, ekdum tasty aur fresh 🍽️. Madhepura ka best spot hai yeh! 🏅",
+                "Had an awesome experience at Cool Moon! 😍 Pasta creamy tha aur Chinese dishes bilkul authentic 😋. Staff bhi friendly tha, feel home type 🏡!",
+                "Yeh place sirf khane ke liye nahi, dekhne ke liye bhi accha hai! 😍 Interiors itne beautiful hain ✨, aur food toh best hai! 🍝 Service bhi fast 🚀, staff polite 👍.",
+                "Cool Moon mein aake lagta hai ki sab kuch perfect hai! ✨ Food tasty 😋, service fast ⏱️ aur atmosphere bahut relaxed hai 😌. Madhepura mein yeh ek hidden treasure hai! 💎",
+                "Mujhe toh yeh restaurant bohot pasand aaya! ❤️ Friendly staff aur khana ekdum delicious 😋. Yeh jagah definitely family aur friends ke saath visit karne layak hai! 👨‍👩‍👧‍👦",
+                "The place looks so beautiful from inside! 😍 Khana bhi perfect tha—Indian aur Chinese dono hi amazing! 🍛 Best part hai unka fast service aur accha staff 💪.",
+                "Cool Moon ki interiors toh must-watch hai 😍! The food is great too – tried their pasta, and it was perfect! 🍝 Fast service and nice staff 👏.",
+                "Amazing experience! 💫 Food was fresh, tasty, and served hot 🔥. Staff was very friendly and made us feel at home 🏡. Definitely coming back!",
+                "Cool Moon is the best spot in Madhepura! 🌟 Food and service both are amazing 😋. Loved the ambiance and the staff is so polite 👌.",
+                "The food was delicious 😋, and the place is so peaceful and relaxing 🧘‍♀️. Had a great time with friends. Highly recommend Cool Moon! 🥰",
+                "Amazing vibe and even better food! 😍 Tried their Indian and Chinese dishes 🍛🍜—both were top-notch! Fast service 🚀 and staff was very friendly 😊.",
+                "Cool Moon is a treat for your taste buds 😋. Delicious food, quick service ⏱️, and the perfect ambiance ✨. Highly recommend it! 💯",
+                "Cool Moon is the place to be if you want great food 🍝 and great service 👌. Love their atmosphere—comfortable, cozy, and relaxing 🧘‍♀️.",
+                "This restaurant has it all! 🍝 Great food, friendly staff 👏, and a perfect vibe ✨. One of the best places in Madhepura to dine! 😍",
+                "Loved the Italian dishes here 🍕, so authentic and tasty 😋. Service was fast ⏱️ and the staff was super helpful 🙌. Definitely visiting again!",
+                "Yeh place sabke liye perfect hai! 👌 Chaahe aap family ke saath aaye ya friends ke saath, khana aur atmosphere dono amazing hai! 😍",
+                "Khana perfect tha! 👌 The Chinese dishes were my favorite 🥡. Staff was helpful, and service was fast 🚀. Cool Moon is a must-visit! 🌟",
+                "Cool Moon ki ambiance toh relaxing hai hi 🧘‍♀️, aur khana bhi ekdum tasty 😋. Friendly staff aur fast service ne experience ko aur bhi achha banaya! 👍",
+                "Mujhe toh yeh restaurant bahut accha laga! ✨ Khana tasty tha, service fast thi aur atmosphere relaxing tha! Definitely will visit again 😍.",
+                "Agar Madhepura mein best restaurant chahiye toh Cool Moon ko zaroor try karo! 😊 Great food, amazing interiors ✨, and fast service ⏱️.",
+                "Cool Moon has the perfect combination of delicious food 🍝 and great service 👏. Loved the vibe and atmosphere! Definitely my favorite place to eat in Madhepura 😍.",
+                "Loved the food here! 😋 From Indian to Italian, everything was perfect 👌. The staff made our experience even better with their friendly service 💕.",
+                "The ambiance was just so cozy 🧘‍♂️, and the food was amazing 😍. Cool Moon is the perfect place for a relaxed meal with great company! 👨‍👩‍👧‍👦",
+                "Every time I visit Cool Moon, the food gets better! 🍝 Friendly staff, quick service ⏱️, and cozy interiors 🏡 make this place so special! 💯",
+                "Cool Moon is my go-to place for tasty food 🍛 and a peaceful vibe ✨. Service is always fast 🚀 and the staff is always ready to help 🙌.",
+                "Had an amazing meal here! 🍝 The staff is super friendly, and the ambiance is so relaxing ✨. Will definitely be coming back soon! 😊",
+                "The food is just perfect 😋! Cool Moon offers a great variety, and the service is so fast 🚀. Staff is always polite and ready to help 🙌.",
+                "Cool Moon is perfect for anyone who loves good food 🍛 and a relaxing ambiance 🧘‍♂️. Fast service ⏱️ and friendly staff make it even better!",
+                "Food, service, and ambiance—everything was amazing! 😍 The staff treated us like family 👨‍👩‍👧‍👦. Cool Moon is my new favorite spot in Madhepura!",
+                "Such a great experience! 😍 The food was fresh, flavorful 🍝, and the staff was super friendly 😊. Cool Moon never disappoints!",
+                "Cool Moon is the place to be if you want a great meal 🍽️ and a cozy atmosphere 🏡. The staff is so friendly, and the service is quick ⏱️!",
+                "Best restaurant in Madhepura! 🌟 Food is delicious and fresh 🍛, service is quick, and the vibe is so comfortable! 👌",
+                "Every time I visit, I love it even more! 😍 Delicious food 🍝, friendly staff 👏, and fast service ⏱️. Cool Moon is the place to be!",
+                "If you’re in Madhepura, you HAVE to visit Cool Moon! 😋 Amazing food, cozy interiors, and fast service 🚀. Definitely worth every visit!",
+                "Absolutely loved Cool Moon! 😍 Delicious food 🍽️, friendly staff, and such a relaxing vibe. Can’t wait to come back again soon! 🏡",
+                "Perfect place to relax and enjoy tasty food! 😍 The interiors are beautiful, and the staff is so polite 🙌. Cool Moon is my new favorite place in Madhepura!",
+                "Every time I visit, the food just gets better! 😋 Tried their pasta 🍝 and loved it! Service was fast ⏱️, and staff was so friendly 😊.",
+                "Cool Moon offers the best experience for food lovers 🍽️! Great food, amazing service 👏, and an unforgettable atmosphere ✨.",
+                "Had a great time here! 😍 Food was perfect 🍛, service was quick ⏱️, and the staff was super friendly 😊. Highly recommend this place!",
+                "The food here is always delicious 😋, and the atmosphere is always so peaceful 🧘‍♀️. Cool Moon is the best place for a relaxing meal!",
+                "A great place to enjoy delicious food 🍝 and amazing service 💯. I love Cool Moon! ✨ Always an unforgettable experience! 😍"
+            ];
+            textArea.textContent = reviewText[Math.floor(Math.random() * reviewText.length)];
+            document.getElementById("copyImg").src ="image/logo/copy.png";
+            textArea.style.fontSize = "14px";
+
+        }
+
+        function submit(){
+            window.open("https://www.google.com/search?sca_esv=14324ad49b0ab5cb&rlz=1C1VIQF_enIN1135IN1135&sxsrf=AHTn8zp2WRStOIeObI2ZT8FpYIbmRNrc5Q:1738875569737&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzYkTVipMbT4iYc1QhDYEHZZsvEy0YV3DjEuDK9msBQSjtGySetW6Z56_nAvBiLuEEI4Z4a6h2PNkz-P_Uek9pLSRnkZi_lbtcoFXmypTq74faQ4AZA%3D%3D&q=Cool+Moon+Restaurant+Reviews&sa=X&ved=2ahUKEwij_pGl-K-LAxVBa2wGHdmBL7cQ0bkNegQIMRAE&cshid=1738875584717809&biw=1280&bih=585&dpr=1.5#lrd=0x39ee377fc5ad62c5:0xdf9fd862dbb2de9c,3,,,,", "_blank");
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
